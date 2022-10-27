@@ -1,0 +1,326 @@
+* {
+  padding: 0%;
+  margin: 0 auto;
+  font-family: "Abyssinica SIL", serif;
+  box-sizing: border-box;
+}
+
+.body__inicio {
+  background-color: #a1cde2;
+  height: 100px;
+}
+
+.nav {
+  background-color: #00b8e6;
+  height: 70px;
+}
+
+.logo {
+  text-align: center;
+  font-family: "Splash", cursive;
+}
+.nav__list {
+  background-color: black;
+  color: beige;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 20px;
+  padding: 5px;
+  height: 40px;
+  margin-top: 10px;
+  width: 100%;
+  justify-items: center;
+}
+
+.nav__list i {
+  opacity: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.titulo__producto {
+  margin-top: 20px;
+  font-size: 40px;
+  z-index: 100;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: -170px;
+}
+
+.titulo-productos {
+  background-color: white;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.titulo__producto {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  z-index: 1000;
+}
+
+.wave {
+  height: 300px;
+  z-index: -13333;
+}
+.card {
+  width: 350px;
+  height: 500px;
+  box-shadow: 3px 3px 3px 3px;
+  background-color: rgb(244, 240, 240);
+
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.card:hover {
+  box-shadow: none;
+  border: 1px solid black;
+}
+
+.img__producto {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 300px;
+}
+.card li {
+  padding-top: 10px;
+  padding-left: 7px;
+}
+
+.producto__nombre {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.footer__inicio {
+  background: black;
+  height: 10px;
+  color: aliceblue;
+  margin-top: 80px;
+  height: 200px;
+  text-align: center;
+}
+
+.footer__inicio p {
+  padding-top: 20px;
+}
+.inicio__footer {
+  background-color: rgb(49, 49, 49);
+  font-size: 30px;
+}
+p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 1500px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*-------------------- CSS PARA CONTACTOS---------------------- */
+.fieldest {
+  padding-left: 20px;
+  background-color: #fff;
+  text-align: center;
+  width: 600px;
+  margin-top: 100px;
+}
+
+.titulo__contacto {
+  text-align: center;
+}
+
+.input__form {
+  text-align: center;
+}
+
+.body__contacto {
+  background-color: #a1cde2;
+}
+
+/* -------------------CSS PARA EL FORMULARIO------------------------ */
+
+.table {
+  width: 1000px;
+  height: 500px;
+  margin-top: 50px;
+}
+.table th {
+  border: 2px solid black;
+  font-size: 30px;
+}
+.table td {
+  padding: auto;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+.form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* -------------------CSS PARA FAQ-------------------- */
+.titulo__faq {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.text__faq p {
+  text-align: center;
+  padding-left: 10%;
+  margin-right: 10%;
+}
+
+.text__faq li {
+  padding-left: 1%;
+  margin-right: 2%;
+}
+
+/* ---------------CSS NOSOTROS-------------------- */
+
+.titulo__nosotros {
+  margin-top: 40px;
+
+  font-size: 20px;
+}
+
+.text__nosotros {
+  padding-top: 10px;
+}
+
+.img__nosotros {
+  width: 100%;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* -----------------RESPONSIVE--------------------- */
+
+@media (max-width: 1010px) {
+  .nav__list {
+    display: grid;
+    border: 2px solid #fff;
+  }
+}
+
+@media (min-width: 1500px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 400px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .titulo__producto {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -280px;
+  }
+  .logo {
+    position: relative;
+    z-index: 2000;
+    background-color: #00b8e6;
+    height: 50px;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 200px;
+    z-index: 1000;
+    margin-top: -170px;
+    border: black 2px solid;
+    height: 199px;
+    transition: 0.6s;
+  }
+  .nav__list:hover {
+    margin-top: 0px;
+  }
+
+  .nav__list i {
+    opacity: 10;
+  }
+
+  .titulo-productos {
+    position: relative;
+    z-index: -2000;
+    margin-top: -10px;
+  }
+  .fieldest {
+    width: 90%;
+    height: 500px;
+  }
+  .img__nosotros {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* -------------------ANIMACIONES---------------- */
+
+.animacion {
+  animation-name: quienesSomos;
+  animation-duration: 3s;
+
+  position: relative;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes quienesSomos {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.preguntas {
+  animation-name: preguntas;
+  animation-duration: 3s;
+
+  position: relative;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes preguntas {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
